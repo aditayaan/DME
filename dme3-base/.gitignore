@@ -1,0 +1,10 @@
+**/*~ 
+**/*.swp
+.idea/*
+**/target/*
+**/*.iml
+.project
+.classpath
+org.eclipse.*.prefs
+/logs/*
+dme2grmendpoints.txt

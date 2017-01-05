@@ -1,0 +1,43 @@
+[ {
+  "@id" : "uuid:7ddd8501-b1d0-4b77-9edd-a3ff06d13c3b",
+  "@type" : "BillOfMaterials",
+  "specVersion" : "1.1.0",
+  "spdx:name" : "dme2-schemas Black Duck I/O Export",
+  "creationInfo" : {
+    "spdx:creator" : "Tool: Launcher",
+    "spdx:created" : "2017-01-05T16:57:37.000Z"
+  }
+}, {
+  "@id" : "maven:com.att.aft/dme2-schemas/3.1.200",
+  "@type" : "Project",
+  "name" : "dme2-schemas",
+  "revision" : "3.1.200",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "com.att.aft:dme2-schemas:3.1.200"
+  },
+  "relationship" : {
+    "related" : "maven:junit/junit/4.12",
+    "relationshipType" : "DYNAMIC_LINK"
+  }
+}, {
+  "@id" : "maven:junit/junit/4.12",
+  "@type" : "Component",
+  "revision" : "4.12",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "junit:junit:4.12"
+  },
+  "relationship" : {
+    "related" : "maven:org.hamcrest/hamcrest-core/1.3",
+    "relationshipType" : "DYNAMIC_LINK"
+  }
+}, {
+  "@id" : "maven:org.hamcrest/hamcrest-core/1.3",
+  "@type" : "Component",
+  "revision" : "1.3",
+  "externalIdentifier" : {
+    "externalSystemTypeId" : "maven",
+    "externalId" : "org.hamcrest:hamcrest-core:1.3"
+  }
+} ]
