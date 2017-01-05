@@ -384,7 +384,13 @@ public class HttpRequestInvoker implements RequestInvokerIntf {
 
 		SimpleRealm realm = context.getRequest().getRealm();
 
-		if (realm != null) {
+		/*if (realm != null) {
+			headers.put(HttpHeader.AUTHORIZATION.asString(),
+					"Basic " + B64Code.encode(realm.getPrincipal() + ":" + realm.getCredentials(), StringUtil.__UTF8));
+		} */
+		
+		/* TODO Temporary fix to make AAF work */
+		if (realm != null && realm.getPrincipal() != null &&  realm.getCredentials()!= null) {
 			headers.put(HttpHeader.AUTHORIZATION.asString(),
 					"Basic " + B64Code.encode(realm.getPrincipal() + ":" + realm.getCredentials(), StringUtil.__UTF8));
 		}
