@@ -418,7 +418,7 @@
 				  <inherited>false</inherited>
 				<extensions>true</extensions>
 				<configuration>
-					<serverId>ossrhajsc</serverId>
+					<serverId>ossrhdme</serverId>
 					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
 					<autoReleaseAfterClose>true</autoReleaseAfterClose>
 				</configuration>
