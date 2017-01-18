@@ -102,47 +102,49 @@
 				  </formats>
 				</configuration>
 		      </plugin>
+			<plugin>
+				<groupId>org.sonatype.plugins</groupId>
+				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<version>1.6.7</version>
+				<extensions>true</extensions>
+				<configuration>
+					<serverId>ossrhdme</serverId>
+					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+					<autoReleaseAfterClose>true</autoReleaseAfterClose>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
+	
 	<profiles>
-        <profile>
-            <id>doclint-java8-disable</id>
-            <activation>
-                <jdk>[1.8,)</jdk>
-            </activation>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>2.10.4</version>
-                        <configuration>
-                            <additionalparam>-Xdoclint:none</additionalparam>
-                            <quiet>true</quiet>
-                        </configuration>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-site-plugin</artifactId>
-                        <version>3.5.1</version>
-                        <configuration>
-                            <reportPlugins>
-                                <plugin>
-                                    <groupId>org.apache.maven.plugins</groupId>
-                                    <artifactId>maven-javadoc-plugin</artifactId>
-                                    <version>2.10.4</version>
-                                    <configuration>
-                                        <additionalparam>-Xdoclint:none</additionalparam>
-                                        <quiet>true</quiet>
-                                    </configuration>
-                                </plugin>
-                            </reportPlugins>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
+	    <!-- Add plugins here that should only be executed on the Jenkins server -->
+	    <profile>
+		<id>jenkins</id>
+		<activation>
+		    <property>
+			<name>env.BUILD_NUMBER</name>
+		    </property>
+		</activation>
+		<build>
+		    <plugins>			 
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<version>1.5</version>
+				<executions>
+				<execution>
+					<id>sign-artifacts</id>
+					<phase>verify</phase>
+					<goals>
+					<goal>sign</goal>
+					</goals>
+				</execution>
+				</executions>
+			  </plugin> 			   			    
+		    </plugins>
+		</build>
+	    </profile>
+	</profiles>
 	<scm>
 		<connection>https://github.com/att/DME.git</connection>
 		<developerConnection>${project.scm.connection}</developerConnection>
