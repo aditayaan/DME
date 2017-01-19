@@ -16,9 +16,9 @@ node {
     // Run the maven build
     //sh for unix bat for windows
 	
-    sh "${mvnHome}/bin/mvn -f scld-config-api/pom.xml clean deploy -DskipTests=true"
-    sh "${mvnHome}/bin/mvn -f dme2-schemas/pom.xml clean deploy -DskipTests=true"
-    sh "${mvnHome}/bin/mvn -f dme3-base/pom.xml clean deploy -DskipTests=true"
-    sh "${mvnHome}/bin/mvn -f dme3-pkg/pom.xml clean deploy -DskipTests=true"
+    sh "${mvnHome}/bin/mvn -f scld-config-api/pom.xml clean deploy"
+    sh "${mvnHome}/bin/mvn -f dme2-schemas/pom.xml clean deploy"
+    sh "${mvnHome}/bin/mvn -f dme3-base/pom.xml clean deploy"
+    sh "${mvnHome}/bin/mvn -f dme3-pkg/pom.xml clean deploy"
    
 }
