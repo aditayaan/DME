@@ -1,11 +1,11 @@
 [ {
-  "@id" : "uuid:7ddd8501-b1d0-4b77-9edd-a3ff06d13c3b",
+  "@id" : "uuid:d4c3342c-e05f-451e-9562-a643d335de69",
   "@type" : "BillOfMaterials",
   "specVersion" : "1.1.0",
   "spdx:name" : "dme2-schemas Black Duck I/O Export",
   "creationInfo" : {
     "spdx:creator" : "Tool: Launcher",
-    "spdx:created" : "2017-01-05T16:57:37.000Z"
+    "spdx:created" : "2017-01-19T04:47:38.000Z"
   }
 }, {
   "@id" : "maven:com.att.aft/dme2-schemas/3.1.200",
