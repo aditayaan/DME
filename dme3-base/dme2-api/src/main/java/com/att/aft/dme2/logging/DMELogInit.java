@@ -8,7 +8,6 @@ import org.slf4j.ILoggerFactory;
  * SLF4J LoggerFactory methods that locate the necessary bindings.  This isn't a great solution, but it's either this or
  * intercept the System.err messages to see if it contains the SLF4J error message
  * <p/>
- * Created by cr618c on 9/3/2015.
  */
 public class DMELogInit {
   private DMELogInit() {
