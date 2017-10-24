@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>com.att.aft</groupId>
 		<artifactId>dme2-base</artifactId>
-		<version>3.1.200</version>
+		<version>3.1.200-oss</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>dme2-jaxws-client</artifactId>

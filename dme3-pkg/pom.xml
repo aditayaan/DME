@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.att.aft</groupId>
 	<artifactId>dme2</artifactId>
-	<version>3.1.200</version>
+	<version>3.1.200-oss</version>
 	<packaging>jar</packaging>
 	<name>dme2-3.x</name>
 	<url>https://github.com/att/DME/wiki</url>
@@ -57,7 +57,7 @@
 		<dependency>
 			<groupId>com.att.aft</groupId>
 			<artifactId>dme2-api</artifactId>
-			<version>3.1.200</version>
+			<version>3.1.200-oss</version>
 			<exclusions>
 				<exclusion>
 					<artifactId>junit</artifactId>
@@ -132,7 +132,7 @@
 		<dependency>
 			<groupId>com.att.aft</groupId>
 			<artifactId>dme2-schemas</artifactId>
-			<version>3.1.200</version>
+			<version>3.1.200-oss</version>
 			<exclusions>
 				<exclusion>
 					<artifactId>junit</artifactId>
@@ -143,7 +143,7 @@
 		<dependency>
 			<groupId>com.att.aft</groupId>
 			<artifactId>dme2-jms-provider</artifactId>
-			<version>3.1.200</version>
+			<version>3.1.200-oss</version>
 			<exclusions>
 				<exclusion>
 					<groupId>com.att.aft</groupId>
@@ -158,7 +158,7 @@
 		<dependency>
 			<groupId>com.att.aft</groupId>
 			<artifactId>dme2-jaxws-client</artifactId>
-			<version>3.1.200</version>
+			<version>3.1.200-oss</version>
 			<exclusions>
 				<exclusion>
 					<groupId>com.att.aft</groupId>
@@ -306,8 +306,24 @@
 									<shadedPattern>com.att.aft.dme2.jdbc.internal.apache.tomcat.jdbc</shadedPattern>
 								</relocation>
 								<relocation>
-									<pattern>org.apache.julic</pattern>
-									<shadedPattern>com.att.aft.dme2.jdbc.internal.apache.juli</shadedPattern>
+									<pattern>net.jcip.annotation</pattern>
+									<shadedPattern>com.att.aft.dme2.internal.net.jcip.annotation</shadedPattern>
+								</relocation>
+								<relocation>
+									<pattern>com.hazelcast</pattern>
+									<shadedPattern>com.att.aft.dme2.hazelcast</shadedPattern>
+								</relocation>
+								<relocation>
+									<pattern>com.google.thirdparty</pattern>
+									<shadedPattern>com.att.aft.dme2.internal.google.thirdparty</shadedPattern>
+								</relocation>
+								<relocation>
+									<pattern>org.springframework</pattern>
+									<shadedPattern>com.att.aft.dme2.internal.springframework</shadedPattern>
+								</relocation>
+								<relocation>
+									<pattern>org.aopalliance</pattern>
+									<shadedPattern>com.att.aft.dme2.internal.aopalliance</shadedPattern>
 								</relocation>
 							</relocations>
 							<artifactSet>

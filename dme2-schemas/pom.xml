@@ -6,7 +6,7 @@
 	<groupId>com.att.aft</groupId>
 	<artifactId>dme2-schemas</artifactId>
 	<packaging>jar</packaging>
-	<version>3.1.200</version>
+	<version>3.1.200-oss</version>
 	<name>dme2-schemas</name>
 	<url>https://github.com/att/DME/wiki</url>
 	<description>DME2 Schemas</description>

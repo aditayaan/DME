@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.att.aft</groupId>
     <artifactId>scld-config-api</artifactId>
-    <version>3.1.200</version>
+    <version>3.1.200-oss</version>
     <packaging>jar</packaging>
     <name>Scld Config Manager</name>
 	<url>https://github.com/att/DME/wiki</url>

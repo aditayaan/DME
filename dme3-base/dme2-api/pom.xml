@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>com.att.aft</groupId>
 		<artifactId>dme2-base</artifactId>
-		<version>3.1.200</version>
+		<version>3.1.200-oss</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>dme2-api</artifactId>
@@ -52,7 +52,7 @@
 		<dependency>
 			<groupId>com.att.aft</groupId>
 			<artifactId>scld-config-api</artifactId>
-			<version>3.1.200</version>
+			<version>3.1.200-oss</version>
 		</dependency> 
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -223,7 +223,7 @@
 		<dependency>
 			<groupId>com.att.aft</groupId>
 			<artifactId>dme2-schemas</artifactId>
-			<version>3.1.200</version>
+			<version>3.1.200-oss</version>
 		</dependency> 
 		<dependency>
 			<groupId>org.powermock</groupId>
