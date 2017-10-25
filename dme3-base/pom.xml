@@ -40,11 +40,11 @@
 		</developer>
 	</developers>
 
-	<!-- <modules>
+	<modules>
 		<module>dme2-api</module>
 		<module>dme2-jms-provider</module>
 		<module>dme2-jaxws-client</module>
-	</modules> -->
+	</modules>
 	<distributionManagement>
 		<snapshotRepository>
 			<id>ossrhdme</id>
